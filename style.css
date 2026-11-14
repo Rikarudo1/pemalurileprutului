@@ -17,6 +17,9 @@ body{
   background:var(--bg);
   line-height:1.65;
   font-size:17px;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.25;color:var(--blue-dark)}
 a{color:var(--blue)}
@@ -47,7 +50,7 @@ a:hover{color:var(--accent)}
 .nav a:hover,.nav a.active{background:rgba(255,255,255,.14);color:#fff}
 .nav a.active{border-bottom:2px solid var(--accent)}
 
-main{max-width:1000px;margin:0 auto;padding:36px 20px 60px}
+main{max-width:1000px;width:100%;margin:0 auto;padding:36px 20px 60px;flex:1}
 section{margin-bottom:44px}
 h2{font-size:1.7rem;margin:0 0 18px;padding-bottom:8px;border-bottom:2px solid var(--line)}
 h3{font-size:1.2rem;margin:26px 0 8px}
@@ -100,12 +103,8 @@ ol.rules li,ul.rules li{margin-bottom:10px}
 }
 
 .footer{
-    background:var(--blue-dark);
-  color:#fff;
-  text-align:center;
-  padding:26px 20px;
-  font-size:.92rem;
-  margin-top:auto;
+  background:var(--blue-dark);color:#fff;text-align:center;
+  padding:26px 20px;font-size:.92rem;
 }
 .footer a{color:#f0d9a0}
 .footer p{margin:4px 0}
